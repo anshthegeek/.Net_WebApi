@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="api2023ModelStoreContainer" CdmEntityContainer="api2023Entities">
+    <EntitySetMapping Name="tblemployees">
+      <EntityTypeMapping TypeName="api2023Model.tblemployee">
+        <MappingFragment StoreEntitySet="tblemployee">
+          <ScalarProperty Name="empid" ColumnName="empid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="age" ColumnName="age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

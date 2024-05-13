@@ -1,0 +1,26 @@
+﻿@model IEnumerable<API_Frontend_2023.Models.EmployeeModel>
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+
+
+<table>
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Employee City</th>
+        <th>Employee Age</th> 
+    </tr>
+
+    @foreach(var a in Model)
+            {
+                    <tr>
+                        <td>@a.empid</td>
+                        <td>@a.name</td>
+                        <td>@a.city</td>
+                        <td>@a.age</td>
+                    </tr>
+            }
+</table>
